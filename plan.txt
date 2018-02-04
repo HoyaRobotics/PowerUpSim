@@ -1,0 +1,22 @@
+GOAL: Run customizable simulations of FIRST Power Up games.
+
+Be able to input at what times robots do certain tasks. Need to estimate how long each task will take (use Steamworks & past similar games?).
+
+Answer these question:
+1. Is is better to get the power cube in the scale vs the switch in autonomous?
+2. What should the human player focus on putting blocks into the vault?
+3. How many cubes are realistically needded to maintain ownership - should we stock up the vault first, own the switch/scale first?
+4. Should we rely on the levitate button or should we focus on creating a robot that can support two other robots?
+
+OUTLINE:
+Have various tasks a robot can do, let people order the tasks, and see how many points you would get at the end of the game
+Possibly have logic options (eg "bring cubes to exchange until vault is full" instead of "bring cube to exchange"x9)
+Tasks:
+- Bring cube to exchange
+- Set cube on switch
+- Set cube on scale
+- Climb
+etc
+
+Loop through the "tick" method 150 times (where each loop represents a second of play) (maybe more than that? 300 times for every 1/2 second?) (150,000 times???)
+Act out movement and point collection accordingly
